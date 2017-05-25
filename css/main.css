@@ -1,0 +1,86 @@
+
+body {
+  font-family: 'Fanwood Text', serif;
+  background-color: #f7f7f7;
+  max-width: 99%;
+
+}
+h1, h2, h3{
+  font-family: 'Quattrocento', serif;
+}
+
+.b-line {
+  height: 3px;
+  border-radius: 3px;
+  background-color: #f2f4f7;
+  width: 100%;
+  margin: 60px auto;
+}
+/* Top Mission Start */
+.top {
+  position: relative;
+  top: 33px;
+  max-width: 99%;
+}
+.top .t-mid{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.top .propic{
+  position: relative;
+  top: 35px;
+  left: 55px;
+}
+.top .mission{
+  position: relative;
+  width: 70%;
+  max-width: 750px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  right: 55px;
+}
+.top .mission .m-content{
+  margin: 65px;
+}
+.t-img {
+  float: right;
+  padding-right: 20%;
+}
+.line-break{
+  height: 3px;
+  border-radius: 3px;
+  background-color: #90FCF9;
+  width: 150px;
+}
+@media screen and (max-width: 649px) {
+  .top .t-mid{
+    display: block;
+  }
+  .top .propic{
+    position: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .top .mission{
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    right: 0px;
+    padding-top: 10px;
+  }
+    .t-img {
+      float: none;
+      padding-right: 0;
+  }
+}
+/* Top Mission End */
+.mres {
+  position: relative;
+  top: 50px;
+  max-width: 99%;
+  text-align: center;
+}
