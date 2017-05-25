@@ -19,8 +19,9 @@ h1, h2, h3{
 /* Top Mission Start */
 .top {
   position: relative;
-  top: 33px;
+  top: 50px;
   max-width: 99%;
+  text-align: center;
 }
 .top .t-mid{
   display: flex;
