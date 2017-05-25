@@ -9,6 +9,11 @@ h1, h2, h3{
   font-family: 'Quattrocento', serif;
 }
 
+a:link, a:visited {
+  color: #63b4d1;
+  text-decoration: none;
+    }
+
 .b-line {
   height: 3px;
   border-radius: 3px;
@@ -16,6 +21,7 @@ h1, h2, h3{
   width: 100%;
   margin: 60px auto;
 }
+
 /* Top Mission Start */
 .top {
   position: relative;
@@ -40,6 +46,7 @@ h1, h2, h3{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background-color: #fff;
   right: 55px;
+  text-align: left;
 }
 .top .mission .m-content{
   margin: 65px;
@@ -54,7 +61,72 @@ h1, h2, h3{
   background-color: #90FCF9;
   width: 150px;
 }
-@media screen and (max-width: 649px) {
+/* Top Mission End */
+
+/* Tactics Start*/
+
+.tactics a:link, .tactics a:visited {
+  color: #000;
+  text-decoration: none;
+}
+.thead {
+  color: #63b4d1;
+}
+.tactics {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.tcard {
+  width: 250px;
+  height: 150px;
+  padding: 10px;
+  margin: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  height: 60%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  display: block;
+  overflow: auto;
+}
+.popup .content {
+  position: relative;
+  max-height: 100%;
+  max-width:100%;
+  display: block;
+  color: black;
+  word-wrap: break-word;
+}
+/* Tactics End */
+
+/* Mobile Start */
+@media screen and (max-width: 650px) {
   .top .t-mid{
     display: block;
   }
@@ -73,15 +145,21 @@ h1, h2, h3{
     right: 0px;
     padding-top: 10px;
   }
-    .t-img {
-      float: none;
-      padding-right: 0;
+  .t-img {
+    float: none;
+    padding-right: 0;
+  }
+  .popup{
+    margin: 1px auto;
+    width: 70%;
+    height: 70%;
+}
+  .tactics {
+    display: block;
+  }
+  .tcard {
+    width: 90%;
+    height: auto;
   }
 }
-/* Top Mission End */
-.mres {
-  position: relative;
-  top: 50px;
-  max-width: 99%;
-  text-align: center;
-}
+/* Mobile End */
