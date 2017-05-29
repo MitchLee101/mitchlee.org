@@ -3,7 +3,8 @@ body {
   font-family: 'Fanwood Text', serif;
   background-color: #f7f7f7;
   max-width: 99%;
-
+  height: 100%;
+  margin:0;
 }
 h1, h2, h3{
   font-family: 'Quattrocento', serif;
@@ -21,6 +22,84 @@ a:link, a:visited {
   width: 100%;
   margin: 60px auto;
 }
+
+/* Nav Stuff */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 999
+}
+.n-popup .close {
+  position: absolute;
+  left: 0;
+  transition: all 200ms;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 999
+}
+.close:hover {
+  color: #90fcf9;
+}
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 996;
+  float: left;
+  display: block;
+  padding: 20px 16px;
+}
+.navbar img {
+    width: 50px;
+    opacity: 0.2;
+    }
+.navbar img:hover {
+    opacity: 1;
+    }
+.n-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(148, 72, 188, 1);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 997;
+}
+.n-overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.n-popup {
+  margin: 20px auto;
+  padding: 20px;
+  background: #9448bc;
+  border-radius: 5px;
+  width: 80%;
+  height: 100%;
+  position: relative;
+  display: block;
+  overflow: auto;
+  font-size: 4em;
+  padding-top: 60px;
+  padding-left: 80px;
+}
+.n-popup a{
+    color: #fff;
+    text-decoration: none;
+}
+.n-popup a:hover {
+  color: #90fcf9;
+}
+/*Nav End*/
 
 /* Top Mission Start */
 .top {
@@ -58,7 +137,7 @@ a:link, a:visited {
 .line-break{
   height: 3px;
   border-radius: 3px;
-  background-color: #90FCF9;
+  background-color: #90fcf9;
   width: 150px;
 }
 /* Top Mission End */
@@ -98,6 +177,7 @@ a:link, a:visited {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  z-index: 999;
 }
 .overlay:target {
   visibility: visible;
@@ -108,8 +188,8 @@ a:link, a:visited {
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 60%;
-  height: 60%;
+  width: 40%;
+  height: 40%;
   position: relative;
   transition: all 5s ease-in-out;
   display: block;
