@@ -5,16 +5,15 @@ body {
   max-width: 99%;
   height: 100%;
   margin:0;
+  font-size: 1.2em;
 }
 h1, h2, h3{
   font-family: 'Quattrocento', serif;
 }
-
 a:link, a:visited {
   color: #63b4d1;
   text-decoration: none;
     }
-
 .b-line {
   height: 3px;
   border-radius: 3px;
@@ -22,7 +21,6 @@ a:link, a:visited {
   width: 100%;
   margin: 60px auto;
 }
-
 /* Nav Stuff */
 .close {
   position: absolute;
@@ -115,7 +113,7 @@ a:link, a:visited {
 }
 .top .propic{
   position: relative;
-  top: 35px;
+  top: 55px;
   left: 55px;
 }
 .top .mission{
@@ -137,13 +135,12 @@ a:link, a:visited {
 .line-break{
   height: 3px;
   border-radius: 3px;
-  background-color: #90fcf9;
+  background-color: #63b4d1;
   width: 150px;
 }
 /* Top Mission End */
 
 /* Tactics Start*/
-
 .tactics a:link, .tactics a:visited {
   color: #000;
   text-decoration: none;
@@ -167,43 +164,25 @@ a:link, a:visited {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
 }
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 999;
+/* Tactics End */
+
+.spaceR {
+  padding-top: 80px;
+  width: 80%;
+  margin: 0 auto;
 }
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-.popup {
-  margin: 20px auto;
-  padding: 20px;
+.carousel-cell {
+  width: 60%;
+  margin-right: 30px;
   background: #fff;
-  border-radius: 5px;
-  width: 40%;
-  height: 40%;
-  position: relative;
-  transition: all 5s ease-in-out;
-  display: block;
-  overflow: auto;
-}
-.popup .content {
-  position: relative;
-  max-height: 100%;
-  max-width:100%;
-  display: block;
-  color: black;
   word-wrap: break-word;
 }
-/* Tactics End */
+.caraH {
+  margin: 30px;
+}
+.flickity-page-dots {
+  display: none;
+}
 
 /* Mobile Start */
 @media screen and (max-width: 650px) {
@@ -229,17 +208,18 @@ a:link, a:visited {
     float: none;
     padding-right: 0;
   }
-  .popup{
-    margin: 10px auto;
-    width: 70%;
-    height: 70%;
-}
   .tactics {
     display: block;
   }
   .tcard {
     width: 90%;
     height: auto;
+  }
+  .spaceR {
+    width: 100%;
+  }
+  .carousel-cell {
+    width: 90%;
   }
 }
 /* Mobile End */
