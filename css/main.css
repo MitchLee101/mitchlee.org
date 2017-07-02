@@ -236,4 +236,9 @@ a:link, a:visited {
     height: auto;
   }
 }
+@media screen and (max-height: 520px) {
+  .imgDown {
+    display: none;
+  }
+}
 /* Mobile End */
