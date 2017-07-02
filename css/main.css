@@ -17,6 +17,25 @@ a:link, a:visited {
   background-color: #f2f4f7;
   width: 100%;
 }
+/* Carousel */
+.spaceRMini {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.carousel {
+  margin-top: 30px;
+}
+.carousel-cell {
+  width: 90%;
+  margin-right: 30px;
+}
+.caraH {
+  margin: 30px;
+}
+.flickity-page-dots {
+  display: none;
+}
+/* Carousel End */
 /* Nav Stuff */
 .close {
   position: absolute;
@@ -129,27 +148,6 @@ a:link, a:visited {
   max-width: 100%;
 }
 /* Sections and Main End */
-
-
-/* Carousel */
-.spaceRMini {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.carousel {
-  margin-top: 30px;
-}
-.carousel-cell {
-  width: 90%;
-  margin-right: 30px;
-}
-.caraH {
-  margin: 30px;
-}
-.flickity-page-dots {
-  display: none;
-}
-/* Carousel End */
 
 /* Mission */
 .mission{
