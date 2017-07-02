@@ -1,11 +1,8 @@
 
 body {
   font-family: 'Didact Gothic', serif;
-  background-color: #f7f7f7;
-  max-width: 99%;
-  height: 100%;
-  margin:0;
   font-size: 1.2em;
+  text-align: center;
 }
 h1, h2, h3{
   font-family: 'Quattrocento', serif;
@@ -19,7 +16,6 @@ a:link, a:visited {
   border-radius: 3px;
   background-color: #f2f4f7;
   width: 100%;
-  margin: 60px auto;
 }
 /* Nav Stuff */
 .close {
@@ -89,6 +85,7 @@ a:link, a:visited {
   font-size: 3em;
   padding-top: 60px;
   padding-left: 80px;
+  text-align: left;
 }
 .n-popup a{
     color: #fff;
@@ -99,38 +96,80 @@ a:link, a:visited {
 }
 /*Nav End*/
 
-/* Top Mission Start */
-.top {
+/* Sections and Main */
+
+.sectionA {
+  height: 100vh;
   position: relative;
-  top: 50px;
-  max-width: 99%;
-  text-align: center;
 }
-.top .t-mid{
-  display: flex;
-  justify-content: center;
+.sectionB {
+  position: relative;
+  top: 90px;
+}
+.sectionMe {
+  height: 100vh;
+  position: relative;
+  background-image: url(../hmong.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50%;
+  background-attachment: fixed;
+}
+.imgCenter {
+  display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
-.top .propic{
+.imgDown {
   position: relative;
-  top: 55px;
-  left: 55px;
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+  margin-top: 40px;
+  max-width: 100%;
 }
-.top .mission{
+/* Sections and Main End */
+
+
+/* Carousel */
+.spaceRMini {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.carousel {
+  margin-top: 30px;
+}
+.carousel-cell {
+  width: 90%;
+  margin-right: 30px;
+}
+.caraH {
+  margin: 30px;
+}
+.flickity-page-dots {
+  display: none;
+}
+/* Carousel End */
+
+/* Mission */
+.mission{
   position: relative;
   width: 70%;
-  max-width: 750px;
+  overflow: auto;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background-color: #fff;
-  right: 55px;
+  opacity: .98;
+  margin: 30px;
   text-align: left;
+  font-size: 1em;
+  margin-top: 40px;
 }
-.top .mission .m-content{
-  margin: 65px;
+.m-content{
+  margin: 25px;
 }
 .t-img {
   float: right;
-  padding-right: 20%;
+  padding-right: 80px;
 }
 .line-break{
   height: 3px;
@@ -138,13 +177,9 @@ a:link, a:visited {
   background-color: #63b4d1;
   width: 150px;
 }
-/* Top Mission End */
+/*Mission End */
 
 /* Tactics Start*/
-.tactics a:link, .tactics a:visited {
-  color: #000;
-  text-decoration: none;
-}
 .thead {
   color: #63b4d1;
 }
@@ -166,43 +201,25 @@ a:link, a:visited {
 }
 /* Tactics End */
 
-.spaceR {
-  padding-top: 80px;
-  width: 80%;
-  margin: 0 auto;
+/* Footer */
+.footer{
+  position: relative;
+  color: #ccc;
+  margin-top: 90px;
 }
-.carousel-cell {
-  width: 60%;
-  margin-right: 30px;
-  background: #fff;
-  word-wrap: break-word;
-}
-.caraH {
-  margin: 30px;
-}
-.flickity-page-dots {
-  display: none;
-}
+/* Footer End */
 
 /* Mobile Start */
-@media screen and (max-width: 650px) {
-  .top .t-mid{
-    display: block;
-  }
-  .top .propic{
-    position: none;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: 100%;
-  }
-  .top .mission{
+@media screen and (max-width: 800px) {
+.mission{
     width: 100%;
     max-width: 100%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     background-color: #fff;
     right: 0px;
     padding-top: 10px;
+    margin: 0px;
+    overflow: auto;
   }
   .t-img {
     float: none;
@@ -214,12 +231,6 @@ a:link, a:visited {
   .tcard {
     width: 90%;
     height: auto;
-  }
-  .spaceR {
-    width: 100%;
-  }
-  .carousel-cell {
-    width: 90%;
   }
 }
 /* Mobile End */
